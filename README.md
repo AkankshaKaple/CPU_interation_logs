@@ -1,9 +1,9 @@
 # Coding_Caffe
 Company project
 Features : 
-'DateTime',   → Data on which the machine was used and the amount of time the machine was active
-'Cpu Count',  → Number of CPUs in the system
-'Cpu Working Time', → Working time of CPU
+- 'DateTime',   → Data on which the machine was used and the amount of time the machine was active
+- 'Cpu Count',  → Number of CPUs in the system
+- 'Cpu Working Time', → Working time of CPU
 'Cpu idle Time', → Idel time of CPU
 'Cpu_percent',  → total CPU percentage using at a particular time
 'Usage Cpu Count ',  → Number of CPUs in use
