@@ -134,7 +134,8 @@ data = os.popen("git config -l").read().strip().split('\n')
 new_dict = {}
 for i in data:
     val = i.split('=')
-new_dict[val[0]] = val[1]
+    new_dict[val[0]] = val[1]
+
 log_json['user_name'] = new_dict['user.email']
 
 whoami = os.popen("whoami").read()
@@ -146,7 +147,7 @@ keyboard_file = "/home/{}/Music/.cpu/keyboard_log.txt".format(user)
 log_json['keyboard'] = count_lines(keyboard_file, 2)
 log_json['mouse'] = count_lines(mouse_file, 1)
 
-# Clearing the contents of the file
+Clearing the contents of the file
 clear_file(mouse_file)
 clear_file(keyboard_file)
 
@@ -156,4 +157,4 @@ url = "http://192.168.0.38"
 path = url + "/save_logs"
 PARAMS = {'cpu_log': data_json}
 r = requests.post(path, data=PARAMS)
-# print(log_json['user_name'])
+
